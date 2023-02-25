@@ -26,6 +26,7 @@ namespace MiltonLopez
 
         private async void BtnCalcular_Click(object sender, EventArgs e)
         {
+            //Ing. he presentado problemas con esta parte, donde no pude colocar el errorProvider a estos campos por un error de "Input string was not in a correct format"
             ValidarCampos();
 
             double precioP1 = Convert.ToDouble(PrecioP1TextBox.Text);
@@ -107,6 +108,18 @@ namespace MiltonLopez
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PrecioP1TextBox.Clear();
+            CantidadP1TextBox.Clear();
+            PrecioP2TextBox.Clear();
+            CantidadP2TextBox.Clear();
+            PrecioP3TextBox.Clear();
+            CantidadP3TextBox.Clear();
+            DescuentoTextBox.Clear();
+            TotalPagarTextBox.Clear();
         }
     }
 }

@@ -53,6 +53,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.BtnRegresar = new System.Windows.Forms.Button();
             this.BtnCalcular = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -256,7 +257,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::MiltonLopez.Properties.Resources.cerrar_sesion;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(758, 188);
+            this.button1.Location = new System.Drawing.Point(817, 191);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 92);
             this.button1.TabIndex = 10;
@@ -270,7 +271,7 @@
             this.BtnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegresar.Image = global::MiltonLopez.Properties.Resources.regreso;
             this.BtnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnRegresar.Location = new System.Drawing.Point(521, 188);
+            this.BtnRegresar.Location = new System.Drawing.Point(614, 191);
             this.BtnRegresar.Name = "BtnRegresar";
             this.BtnRegresar.Size = new System.Drawing.Size(197, 92);
             this.BtnRegresar.TabIndex = 9;
@@ -284,7 +285,7 @@
             this.BtnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCalcular.Image = global::MiltonLopez.Properties.Resources.calculadora;
             this.BtnCalcular.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnCalcular.Location = new System.Drawing.Point(304, 188);
+            this.BtnCalcular.Location = new System.Drawing.Point(225, 191);
             this.BtnCalcular.Name = "BtnCalcular";
             this.BtnCalcular.Size = new System.Drawing.Size(180, 92);
             this.BtnCalcular.TabIndex = 8;
@@ -293,11 +294,26 @@
             this.BtnCalcular.UseVisualStyleBackColor = true;
             this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::MiltonLopez.Properties.Resources.limpiar;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(411, 191);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(197, 92);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "Limpiar";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // FrmE2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1249, 475);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.BtnRegresar);
@@ -346,5 +362,6 @@
         private System.Windows.Forms.TextBox DescuentoTextBox;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

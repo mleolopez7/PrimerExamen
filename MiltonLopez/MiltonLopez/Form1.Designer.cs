@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.BtnRegresar = new System.Windows.Forms.Button();
             this.BtnCalcular = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LstIntMens
@@ -77,6 +77,20 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "¿Desea Calcular el interés mensual de la persona?";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::MiltonLopez.Properties.Resources.cerrar_sesion;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(630, 243);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 75);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Salir ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // BtnRegresar
             // 
             this.BtnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,20 +118,6 @@
             this.BtnCalcular.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnCalcular.UseVisualStyleBackColor = true;
             this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::MiltonLopez.Properties.Resources.cerrar_sesion;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(630, 243);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 75);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Salir       ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmE1
             // 
